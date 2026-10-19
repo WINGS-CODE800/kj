@@ -1,0 +1,6 @@
+{
+  "name": "KIKI AI — Universal Personal Voice Assistant",
+  "description": "Voice-first personal AI assistant with Tamil, Tanglish, and English intelligence, real macOS automation bridge, universal voice typing, spreadsheet engine, and read-aloud system.",
+  "requestFramePermissions": ["microphone", "clipboard-read", "clipboard-write"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

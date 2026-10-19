@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0c2340"/>
+      <stop offset="60%" stop-color="#070c14"/>
+      <stop offset="100%" stop-color="#040609"/>
+    </radialGradient>
+    <linearGradient id="armorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a3b5c"/>
+      <stop offset="50%" stop-color="#182338"/>
+      <stop offset="100%" stop-color="#0e1726"/>
+    </linearGradient>
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle Canvas -->
+  <circle cx="256" cy="256" r="248" fill="url(#bgGlow)" stroke="#22d3ee" stroke-width="4" stroke-opacity="0.3"/>
+
+  <!-- Orbiting Tech Ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="12 18" opacity="0.4"/>
+
+  <!-- Antenna -->
+  <rect x="250" y="70" width="12" height="40" rx="6" fill="#38bdf8"/>
+  <circle cx="256" cy="65" r="14" fill="#22d3ee" filter="url(#glowEffect)"/>
+
+  <!-- Robot Head -->
+  <rect x="136" y="105" width="240" height="190" rx="42" fill="url(#armorGrad)" stroke="#38bdf8" stroke-width="3"/>
+
+  <!-- Ear Audio Sensors -->
+  <rect x="114" y="155" width="22" height="70" rx="10" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="376" y="155" width="22" height="70" rx="10" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Visor Screen -->
+  <rect x="160" y="135" width="192" height="100" rx="24" fill="#030712" stroke="#22d3ee" stroke-width="2"/>
+
+  <!-- Glowing Robot Eyes (Cyan Curved Capsule Visor) -->
+  <ellipse cx="206" cy="185" rx="22" ry="18" fill="#22d3ee" filter="url(#glowEffect)"/>
+  <ellipse cx="306" cy="185" rx="22" ry="18" fill="#22d3ee" filter="url(#glowEffect)"/>
+  <circle cx="212" cy="180" r="6" fill="#ffffff"/>
+  <circle cx="312" cy="180" r="6" fill="#ffffff"/>
+
+  <!-- Friendly Voice Soundwave Mouth -->
+  <path d="M 216 215 Q 256 226 296 215" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Neck Link -->
+  <rect x="232" y="295" width="48" height="20" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Torso / Shoulders -->
+  <path d="M 120 380 Q 256 340 392 380 L 416 480 Q 256 500 96 480 Z" fill="url(#armorGrad)" stroke="#38bdf8" stroke-width="3"/>
+
+  <!-- Center Holographic AI Voice Core (Prominent Mic Icon) -->
+  <circle cx="256" cy="415" r="38" fill="#021024" stroke="#22d3ee" stroke-width="3" filter="url(#glowEffect)"/>
+  
+  <!-- Stylized Microphone Symbol in Chest Core -->
+  <rect x="248" y="398" width="16" height="24" rx="8" fill="#22d3ee"/>
+  <path d="M 240 409 Q 240 426 256 426 Q 272 426 272 409" fill="none" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+  <line x1="256" y1="426" x2="256" y2="434" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Lettering: KIKI AI -->
+  <text x="256" y="475" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="28" fill="#e0f2fe" letter-spacing="4">KIKI AI</text>
+</svg>
